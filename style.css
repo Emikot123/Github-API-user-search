@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* Backgrounds */
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --bg-overlay: #1c2128;
+
+    /* Borders */
+    --border-default: #30363d;
+    --border-muted: #21262d;
+
+    /* Text */
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-muted: #6e7681;
+    --text-disabled: #484f58;
+
+    /* Accent / Links */
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --accent-muted: rgba(56, 139, 253, 0.4);
+    --accent-subtle: rgba(56, 139, 253, 0.15);
+
+    /* State colors */
+    --success: #3fb950;
+    --success-emphasis: #238636;
+    --danger: #f85149;
+    --danger-emphasis: #da3633;
+    --warning: #d29922;
+    --warning-emphasis: #9e6a03;
+    --purple: #a371f7;
+    --orange: #db6d28;
+
+    /* Buttons */
+    --btn-bg: #21262d;
+    --btn-hover: #30363d;
+    --btn-primary-bg: #238636;
+    --btn-primary-hover: #2ea043;
+
+    /* Misc */
+    --shadow: 0 8px 24px rgba(1, 4, 9, 0.85);
+    --radius: 6px;
+}
+
+body{
+    background-color: var(--bg-primary);
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    padding: 80px;
+    gap: 20px;
+    border: 4px solid var(--border-default);
+    border-radius: 40px;
+}
+header img{
+    height: 300px;
+}
+header h1{
+    color: var(--text-primary);
+    font-size: 100px;
+    font-family: "Ubuntu";
+}
+
+header input{
+    background-color: var(--bg-overlay);
+    margin-left: 350px;
+    padding: 40px;
+    font-size: 30px;
+    border: 4px solid var(--border-default);
+    color: var(--text-primary);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    padding: 80px;
+    border: 4px solid var(--border-default);
+    border-radius: 40px;
+    color: var(--text-primary);
+    font-size: 25px;
+    font-family: "Ubuntu";
+    margin-top: 15px;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 4px solid var(--border-default);
+    padding: 50px;
+    font-size: 25px;
+}
+button:hover{
+    background-color: var(--text-muted);
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--text-disabled);
+    cursor: pointer;
+}

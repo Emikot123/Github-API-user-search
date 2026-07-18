@@ -13,33 +13,55 @@
         <button id = "submit" type = "submit">Search</button>
     </header>
     <main>
-        <h3 id = "username">Name</h3>
-        <h4 id = "name"></h4>
-        <div class = user_info>
-            <p>Company:</p>
-            <p id = "company"></p>
+        <div id = "text_info">
+            <a href = "" id = "username"><b>Name</b></a>
+            <h4 id ="name"></h4>
+            <div class = "user_info">
+                <p>Company:</p>
+                <p id = "company"></p>
+            </div>
+            <div class = "user_info">
+                <p>Amount of Repos:</p>
+                <p id = "repo_amount"></p>
+            </div>
+            <div class = "user_info">
+                <p>Followers:</p>
+                <p id = "followers"></p>
+            </div>
+            <div class = "user_info">
+                <p>Following:</p>
+                <p id = "following"></p>
+            </div>
+            <div class = "user_info">
+                <p>Email:</p>
+                <p id = "email"></p>
+            </div>
         </div>
-        <div class = user_info>
-            <p>Amount of Repos:</p>
-            <p id = "repo_amount"></p>
+        <div id = "pfp">
+            <img id = "pfp_icon" src = "user.png" alt = "Loading...">
         </div>
-        <div class = user_info>
-            <p>Followers:</p>
-            <p id = "followers"></p>
-        </div>
-        <div class = user_info>
-            <p>Following:</p>
-            <p id = "following"></p>
-        </div>
-        <div class = user_info>
-            <p>Email:</p>
-            <p id = "email"></p>
-        </div>
-
-
-
 
     </main>
+    <section id = "repo_container">
+        <div id = "repo_containe">
+            <a href = "" id = "repo_name"><b>Name</b></a>
+            <div class = "repo_info">
+                <p>Count:</p>
+                <p id = "repo_count"></p>
+            </div>
+            <div class = "repo_info">
+                <p>Visibility:</p>
+                <p id = "visibility"></p>
+            </div>
+            <div class = "repo_info">
+                <p>Most used Programming Language:</p>
+                <p id = "repo_lang"></p>
+            </div>
+
+        </div>
+    </section>
+
+
     <script src="script.js"></script>
 </body>
 </html>
